@@ -18,8 +18,8 @@
 //Declaração das funções
     Lista* lst_cria(void);
     Lista* lst_insere(Lista* lst, int v);
-    Lista* lst_imprime(Lista* lst);
-    Lista* lst_vazia(Lista* lst);
+    void lst_imprime(Lista* lst);
+    int lst_vazia(Lista* lst);
     Lista* lst_busca(Lista* lst, int v);
     Lista* lst_retira(Lista* lst, int v);
     Lista* lst_insere_ordenado(Lista* lst, int v);
