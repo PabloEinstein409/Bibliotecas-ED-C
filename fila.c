@@ -7,6 +7,7 @@ Fila* fila_cria(void){
     f->ini = f->fim = NULL;
     return f;
 }
+//Procedimento para inserir elemento na fila
 void fila_insere(Fila* f, float v){
     Lista* n = (Lista*) malloc (sizeof(Lista));
     n->info = v;
@@ -19,6 +20,7 @@ void fila_insere(Fila* f, float v){
     }
     f->fim = n;
 }
+//Função para retirar elemento na fila
 float fila_retira(Fila* f){
     Lista* t;
     float v;
@@ -34,6 +36,7 @@ float fila_retira(Fila* f){
     free(t);
     return v;
 }
+//Procedimento para liberar a fila
 void fila_libera(Fila* f){
     Lista* q = f->ini;
     while(q!=NULL){
